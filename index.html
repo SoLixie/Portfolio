@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="home.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+    body {
+        background-color: darkgrey;
+        font-family: cursive;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 200%;
+        color: black;
+        text-align: center;
+    }
+
+    p {
+        color: black;
+        text-align: center;
+    }
+
+    .portfolio-image {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .content-container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    button {
+        display: block;
+        margin: 20px auto;
+        /* Center the button horizontally and add some space */
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #080808;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #030303;
+    }
+</style>
+
+<body>
+    <!-- Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Home Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>PORTFOLIO</h1>
+    <div class="content-container">
+        <div class="content">
+            <p>All the details about my journey till here.</p>
+        </div>
+    </div>
+    <img src="te.jpg" alt="Portfolio Image" class="portfolio-image">
+    <!-- Button below the image -->
+    <button onclick="NextPage()">Next</button>
+
+    <script>
+        function NextPage() {
+            window.location.href = "aboutme.html";
+        }
+    </script>
+</body>
